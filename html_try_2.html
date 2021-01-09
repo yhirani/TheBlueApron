@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src ="jquery.imgcheckbox.js"></script>
+	<script src = "script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bodoni Moda">
+   <style>
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2016/12/01/20/18/blur-1876100_1280.jpg);
+        }
+        h{
+            font-family: 'Sacramento';
+            font-size:x-large;
+        }
+        h1{
+            font-family: 'Roboto';
+            
+        }
+        * {
+  box-sizing: border-box;
+}
+.example{
+    position: absolute;
+    left: 72.5%;
+    top: 10%;
+    right: 6.2%;
+    
+    border-radius: 25px;
+
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 25px;
+  
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: lightgrey;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+form.example button:hover {
+  background: lightblue;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.myBox {
+border: 1px solid white ;
+border-radius: 25px;
+position: absolute;
+padding: 5px;
+padding-bottom: 10%;
+font-family: Roboto;
+
+
+overflow: scroll;
+background-color:  rgba(225,225,225,0.7);
+left: 2.6%;
+top: 10%;
+bottom: 2%;
+right: 30%;
+}
+
+
+h4{
+    text-align: center;
+    font-size:x-large;
+    color: black;
+    font-family: 'Bodoni Moda';
+    font-weight: lighter;
+}
+ h2{
+     text-align:center;
+     color: black);
+     font-family: 'Bodoni Moda';
+     font-weight: lighter;
+ }
+
+.boxed {
+    position: absolute;
+    border-radius: 25px;
+    top: 19%;
+   left: 72.5%;
+   bottom: 11%;
+   right: 6.2%;
+  border: 1px solid white ;
+  background-color: rgba(225,225,225,0.7);
+  border-radius: 25 px;
+}
+
+.myBox::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.myBox {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.center {
+    text-align: center;
+    
+}
+
+img{ margin-top: 20px;
+border-radius: 25px;
+margin-left: 5px;
+    margin-right: 5px;
+}
+figcaption{
+    position: absolute;
+    left:8%;
+    color:black;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    
+}
+.f1{
+    position: absolute;
+    left:32%;   
+
+}
+.f2{
+    position: absolute;
+    left: 53%;
+    color:black;
+}
+
+.f3{
+    position: absolute;
+    left: 75%;
+}
+
+	   .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.button {
+    
+    background-color: white;
+    border-radius: 25px;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    font-family: 'Roboto';
+    position: absolute;
+
+   top: 90%;
+   left: 72.5%;
+   right: 6.2%;
+   bottom: 2%;
+
+}
+
+.selectable .ui-selecting {
+  border: 2px dashed #ff0000;
+}
+
+.selectable .ui-selected {
+  border: 2px solid #ff0000;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+  box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
+}
+
+.selectable img {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ffffff;
+}
+
+.selected-items {
+  border: 2px solid #ff0000;
+  line-height: 32px;
+}
+    </style>
+</head>
+<body>
+    <h>The Blue Apron</h>
+
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+        <input type="text" placeholder="Find Your Ingredients" name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="myBox" style="overflow-x:hidden;overflow-y:scroll">
+       <h2> What Do You Have At Home? </h2>
+		  <div class="row">
+			  <div class="column">
+<img src="pic/sugar.png" name="sugar">
+<img src="pic/milk.png" name="milk">
+<img src="pic/paneer.png" name="paneer">
+<img src="pic/potato.png" name="potato">
+
+			  </div>
+			  <div class="column">
+<img src="pic/wheat flour.png" name="wheat flour">
+<img src="pic/tomato.png" name="tomato">
+<img src="pic/cabbage.png" name="cabbage">
+<img src="pic/cauliflower.png" name="cauliflower">
+
+			  </div>
+			  <div class="column">
+<img src="pic/soy sauce.png" name="soy sauce">
+<img src="pic/maida.png" name="all purpose flour">
+<img src="pic/bell peppers.png" name="bell peppers">
+<img src="pic/capsicum.png" name="capsicum">
+
+			  </div>
+			  <div class="column">
+<img src="pic/onion.png" name="onion">
+<img src="pic/chicken.png" name="chicken">
+<img src="pic/ginger.png" name="ginger">
+<img src="pic/garlic.png" name="garlic">
+
+			  </div>
+			  <div class="column">
+<img src="pic/peas.png" name="peas">
+<img src="pic/bread.png" name="bread">
+<img src="pic/ghee.png" name="ghee">
+<img src="pic/besan.png" name="gram flour">
+
+			  </div>
+			  <div class="column">
+<img src="pic/rice.png" name="rice">
+<img src="pic/vinegar.png" name="vinegar">
+<img src="pic/curd.png" name="yoghurt">
+<img src="pic/butter.png" name="butter">
+
+			  </div>
+			  <div class="column">
+<img src="pic/baking powder.png" name="baking powder">
+<img src="pic/baking soda.png" name="baking soda">
+<img src="pic/lemon juice.png" name="lemon juice">
+<img src="pic/semolina.png" name="semolina">
+
+			  </div>
+			  <div class="column">
+<img src="pic/coconut.png" name="coconut">
+<img src="pic/chillies.png" name="chillies">
+<img src="pic/coriander.png" name="coriander">
+<img src="pic/moong dal.png" name="moong">
+
+			  </div>
+			  <div class="column">
+<img src="pic/pistachios.png" name="pistachios">
+<img src="pic/urad dal.png" name="urad dal">
+<img src="pic/black pepper.png" name="peppericorn">
+<img src="pic/heeng.png" name="asafoetida">
+
+			  </div>
+			  <div class="column">
+<img src="pic/cream.png" name="cream">
+<img src="pic/poha.png" name="poha">
+<img src="pic/cucumber.png" name="cucumber">
+<img src="pic/tomato ketchup.png" name="tomato ketchup">
+			  </div>
+			  <div class="column">
+				  <img src="pic/rajma.png" name="rajma">
+				  <img src="pic/kesar.png" name="saffron">
+				  <img src="pic/rice flour.png" name="rice flour">
+				  <img src="pic/milk powder.png" name="milk powder">
+			  </div>
+			  <div class="column">
+				  <img src="pic/nuts.png" name="nuts">
+				  <img src="pic/eggs.png" name="eggs">
+				  <img src="pic/corn starch.png" name="corn starch">
+				  <img src="pic/green beans.png" name="green beans">
+			  </div>
+			  <div class="column">
+				  <img src="pic/carrots.png" name="carrot">
+			  </div>
+		  </div>
+
+
+
+
+        
+            </div>
+            <div class= "center">
+                <a href="html_try_3.html" class="button">Find Me Some Tasty Recipes</a>
+            </div>
+            <div class="boxed">
+                <h4> Ingredients Selected</h4>
+                <br>
+                <ul id="DList">
+					
+				</ul>
+              </div>
+</body>
+</html>
