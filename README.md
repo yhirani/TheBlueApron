@@ -17,9 +17,9 @@ Ever thought about cooking delicious food at home but then you search for a dish
 
 ## Technologies
 Project is created with:
-*Javascript
-*html
-*css
+* Javascript
+* html
+* css
 
 ## Installation
 ```
