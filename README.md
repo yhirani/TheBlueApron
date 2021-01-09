@@ -37,10 +37,10 @@ Happy coooking :)
 
 ## Authors
 The members who have contributed to the project are-
-Sneha Sundarajan
-Yash Hirani
-Nancy Lakra
-Sanchit Garg
+* Sneha Sundarajan
+* Yash Hirani
+* Nancy Lakra
+* Sanchit Garg
 
 
 ## Credits
