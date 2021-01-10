@@ -125,8 +125,44 @@ var dish = `
 
 		{"name": "Raita",
 "link": "https://www.indianhealthyrecipes.com/raita-recipes-biryani-pulao-kababs/",
-"ingredients": "Yoghurt;Onion;Cucumber"}
+"ingredients": "Yoghurt;Onion;Cucumber"},
 
+		{"name": "Bhatura",
+"link": "https://www.yummytummyaarthi.com/chole-bhature-battura-how-to-make/",
+"ingredients": "All purpose flour - Yoghurt  - Milk - Oil"},
+
+		{"name": "Lachha Paratha",
+"link": "https://www.tarladalal.com/lachha-paratha-how-to-make-lachha-paratha-181r",
+"ingredients": "Wheat flour - ghee"},
+
+		{"name": "Omlette",
+"link": "https://www.bbcgoodfood.com/recipes/basic-omelette",
+"ingredients": "Egg - oil"},
+
+		{"name": "Half Fry Egg",
+"link": "https://simmertoslimmer.com/half-fried-eggs/",
+"ingredients": "Egg - oil"},
+
+		{"name": "Matar Paneer",
+"link": "https://www.bawarchi.com/recipe/plain-matar-paneer-oetc6Hhgiegaf.html",
+"ingredients": "Paneer - Peas - onion - tomato - Ginger - Garlic"},
+
+		{"name": "Nimbu Paani",
+"link": "https://www.spiceupthecurry.com/nimbu-pani-recipe/",
+"ingredients": "Lemon Juice"},
+
+		{"name": "Plain Rice",
+"link": "https://vegecravings.com/plain-basmati-rice-recipe/",
+"ingredients": "Rice"},
+
+		{"name": "Paneer Paratha",
+"link": "https://hebbarskitchen.com/paneer-paratha-recipe/",
+"ingredients": "Paneer - Wheat Flour"},
+
+		{"name": "Lassi",
+"link": "https://www.allrecipes.com/recipe/20435/indian-lassi/",
+"ingredients": "Yoghurt - Sugar"}
+		
 		]
 }
 `;
