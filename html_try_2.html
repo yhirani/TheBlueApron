@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bodoni Moda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
    <style>
         body{
-            background-image: url(https://cdn.pixabay.com/photo/2016/12/01/20/18/blur-1876100_1280.jpg);
+            background-image: url("Page2.jpg") ;
         }
         h{
             font-family: 'Sacramento';
             font-size:x-large;
+            
         }
+      
+        li{
+  font-family: "Bodoni Moda";
+  color:black;
+  line-height: 1.5;
+  font-size: large;
+}
+
         h1{
             font-family: 'Roboto';
             
@@ -97,7 +107,7 @@ h4{
  h2{
      text-align:center;
      color: black);
-     font-family: 'Bodoni Moda';
+     font-family: 'Josefin Sans';
      font-weight: lighter;
  }
 
@@ -111,6 +121,16 @@ h4{
   border: 1px solid white ;
   background-color: rgba(225,225,225,0.7);
   border-radius: 25 px;
+  
+}
+.boxed::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.boxed {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .myBox::-webkit-scrollbar {
@@ -195,6 +215,7 @@ figcaption{
 
 
 .button {
+
     
     background-color: white;
     border-radius: 25px;
@@ -205,9 +226,9 @@ figcaption{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 1px;
   cursor: pointer;
-    font-family: 'Roboto';
+    font-family: 'Josefin Sans';
     position: absolute;
 
    top: 90%;
@@ -217,31 +238,11 @@ figcaption{
 
 }
 
-.selectable .ui-selecting {
-  border: 2px dashed #ff0000;
-}
 
-.selectable .ui-selected {
-  border: 2px solid #ff0000;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
-  box-shadow: 0px 0px 8px 0px rgba(255, 0, 0, 1);
-}
-
-.selectable img {
-  margin: 5px;
-  padding: 5px;
-  border: 2px solid #ffffff;
-}
-
-.selected-items {
-  border: 2px solid #ff0000;
-  line-height: 32px;
-}
     </style>
 </head>
 <body>
-    <h>The Blue Apron</h>
+    <h><img src="logoWhite2.png"> </h>
 
     <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
         <input type="text" placeholder="Find Your Ingredients" name="search2">
@@ -267,7 +268,7 @@ figcaption{
 			  <div class="column">
 <img src="pic/soy sauce.png" name="soy sauce">
 <img src="pic/maida.png" name="all purpose flour">
-<img src="pic/bell peppers.png" name="bell peppers">
+<img src="pic/bell peppers.png" name="red bell pepper">
 <img src="pic/capsicum.png" name="capsicum">
 
 			  </div>
@@ -341,10 +342,10 @@ figcaption{
 
         
             </div>
-            <div class= "center">
+            <div class= "center" >
                 <a href="html_try_3.html" class="button">Find Me Some Tasty Recipes</a>
             </div>
-            <div class="boxed">
+            <div class="boxed" style="overflow-x:hidden;overflow-y:scroll">
                 <h4> Ingredients Selected</h4>
                 <br>
                 <ul id="DList">
